@@ -1,0 +1,17 @@
+public class hellojava {
+    public static void main(String[] args) {
+        System.out.println("안녕 자바!");
+    }
+}
+
+public class Myname {
+    public static void main(String[] args) {
+        System.out.println("최선호");
+    }
+}
+public class Sentence {
+    public static void main(String[] args) {
+        System.out.println("치킨은 살 안쪄요.");
+        System.out.println("살은 내가 쪄요");
+    }
+}
