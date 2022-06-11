@@ -1,0 +1,7 @@
+public class StringExample {
+    public static void main(String[] args) {
+        // 자바에서 "A" 는 문자열이고 'A' 문자로 취급됨 "'의 역할이 다름
+        System.out.println("나는 문자열");
+        System.out.println('나');
+    }
+}
