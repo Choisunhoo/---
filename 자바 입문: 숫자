@@ -1,0 +1,10 @@
+public class NumberExample {
+    public static void main(String[] args) {
+        // 정수 37을 출력
+        System.out.println(37);
+        // 정수 1과 2의 합을 계산해서 출력
+        System.out.println(1 + 2);
+        // 소수 4.3과 0.2의 합을 계산해서 출력
+        System.out.println(4.3 + 0.2);
+    }
+}
