@@ -1,0 +1,14 @@
+public class StringExample {
+    public static void main(String[] args) {
+        // 자바에서 "A" 는 문자열이고 'A' 문자로 취급됨 "'의 역할이 다름
+        System.out.println("나는 문자열");
+        System.out.println('나');
+
+        // 이스케이프를 사용해서 ""가 포함된 문자열 출력
+        System.out.println("안녕 나는 \"자바\"야.");
+
+        // 이스케이프를 이용해서 줄바꿈 하는법 
+        System.out.println("치킨은 살 안쪄오. \n살은 내가 쪄요.");
+
+    }
+}
