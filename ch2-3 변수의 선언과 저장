@@ -1,0 +1,14 @@
+
+public class VarEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 사칙 연산을 편하게 하기 위해 변수 x와 y를 생성 후 원하는 경우 변수에 저장된 값만 바꿈
+		int x = 4, y = 2; 
+		System.out.println(x+y); // 덧셈
+		System.out.println(x-y); // 뺄셈
+		System.out.println(x*y); // 곱셈
+		System.out.println(x/y); // 나눗셈
+	}
+
+}
