@@ -1,0 +1,33 @@
+
+public class VarEx3 {
+
+	public static void main(String[] args) {
+		final int score = 100;
+		
+		boolean power = true;
+		
+		byte b = 127; // -128 ~ 127
+		
+		int oct = 010; // 8진수, 10진수로는 8
+		int hex = 0x10; // 16진수, 10진수로는 16
+		
+		// 20억을 넘은 경우 접미사 L을 붙혀서 long 타입 리터럴로 만들어줌
+		long l = 10_000_000_000L;
+		
+		// float 타입은 접두사인 f를 지우면 에러가 발생하지만 double 타입은 접두사인 d를 생략해도 괜찮음
+		float f = 3.14f; 
+		double d = 3.14; 
+		
+		// println()는 값을 10진수로만 출력하고 접두사나 접미사는 출력하지 않음
+		System.out.println(oct);
+		System.out.println(hex);
+		
+		// 실수형 출력 
+		System.out.println(10.); // 10.0 출력
+		System.out.println(.10); // 0.1 출력
+		System.out.println(10f); // 10.0 출력
+		System.out.println(1e3); // 10의 3제곱인 1000을 실수형인 1000.0 출력
+		
+	}
+
+}
