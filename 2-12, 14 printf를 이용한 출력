@@ -1,0 +1,36 @@
+public class PrintfEx1 {
+    public static void main(String[] args) {
+        System.out.println(10.0/3);
+
+        // 정수 15 를 10진수, 8진수, 16진수, 2진수로 각각 출력 이후 줄바꿈
+        System.out.printf("%d%n", 15); // 15 출력
+        System.out.printf("%o%n", 15); // 17 출력
+        System.out.printf("%x%n", 15); // 0 출력
+        System.out.printf("%s%n", Integer.toBinaryString(15)); // 1111 출력
+
+        // 실수형 변수 f에 123.456789를 저장
+        float f = 123.456789f;
+        // 실수형 변수 f를 출력
+        System.out.printf("%f%n", f); // 정밀도가 7임으로 123.4567 까지만 바르게 출력됨
+        System.out.printf("%e%n", f); // 지수 형식으로 출력 1.2345678e + 0.2
+        System.out.printf("%g%n", f); // 123.457
+
+        // 전체 자리수를 설정하여 출력
+        System.out.printf("[%5d]%n", 10);  // [   10] 출력
+        System.out.printf("[%-5d]%n", 10); // [10   ] 출력
+        System.out.printf("[%05d]%n", 10); // [00010] 출력
+
+        // double 타입의 실수 변수 생성
+
+        double d = 1.23456789;
+        System.out.printf("%14.10f%n", d); // .을 포함한 14자리 수의 실수를출력   1,2345678900
+        System.out.printf("%14.6f%n", d);  // .을 포함한 14자리 실수중 6자리까지만 출력     1.234568
+        System.out.printf("%.6f%n", d); // 실수중 6자리만 출력  1.234568
+
+        // 문자열 출력
+        System.out.printf("[%s]%n", "www.codechobo.com"); // [www.codechobo.com]
+        System.out.printf("[%20s]%n", "www.codechobo.com"); // [   www.codechobo.com]
+        System.out.printf("[%-20s]%n", "www.codechobo.com"); // [www.codechobo.com   ]
+        System.out.printf("[%.10s]%n", "www.codechobo.com"); // [www.codech]
+    }
+}
