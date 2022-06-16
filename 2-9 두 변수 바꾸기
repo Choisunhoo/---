@@ -1,0 +1,17 @@
+public class VarEx2 {
+    public static void main(String[] args) {
+        // 슷자를 저장할 변수를 2개 생성후 값을 입력
+        int x = 4, y = 2;
+        // 두 변수를 바꾸기 위해 임시적으로 x의 값을 저장할 tmp(temporary) 라는 변수를 생성
+        int tmp;
+
+        tmp = x; // 1. x의 값을 tmp에 저장
+        x = y;   // 2. y의 값을 x에 저장
+        y = tmp; // 3. tmp의 값을 y에 저장
+
+
+        // 바뀐 변수 x와 y를 차례대로 출력
+        System.out.println("x="+x);
+        System.out.println("y="+y);
+    }
+}
