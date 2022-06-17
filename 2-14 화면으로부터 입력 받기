@@ -1,0 +1,24 @@
+import java.util.Scanner; // 1. import문을 통해서 util패키지에 있는 Scanner를 가져옴
+
+public class ScanfEx1 {
+    public static void main(String[] args){
+
+        // 2. Scanner클래스의 객체 생성 (화면에서 입력 받을 것으로 지정)
+        Scanner scanner = new Scanner(System.in);
+
+        // num이라는 변수를 생성한뒤 scanner를 사용해서 정수 하나를 입력 받고 num에 저장
+        int num = scanner.nextInt();
+        // num2이라는 변수를 생성한뒤 scanner를 사용해서 정수 하나를 입력 받고 num에 저장
+        int num2 = scanner.nextInt();
+        // num에 저장된 정수 출력
+        System.out.println(num);
+        // num2에 저장된 정수 출력
+        System.out.println(num2);
+
+        // 줄단위로 입력
+        String input = scanner.nextLine();
+        int num_line = Integer.parseInt(input);
+
+        System.out.println(num_line);
+    }
+}
