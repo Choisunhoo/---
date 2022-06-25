@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int a = 1_000_000; // 1,000,000 1백만 10의 6제곱
+        int b = 2_000_000; // 2,000,000 2백만 10의 6재곱
+
+        // 10의 12제곱. int의 범위는 10의 9제곱. 롱에 저장을 해도 결과 값이 int여서 이상한 숫자 출력
+        long c = a * b;      //   a * b = 2,000,000,000,000 ?
+
+        long d = (long)a * b; // a나 b를 롱타입으로 설정 2000000000000
+        System.out.println(c);  // -1454759936 출력
+        System.out.println(d);  // 2000000000000 출력
+    }
+}
