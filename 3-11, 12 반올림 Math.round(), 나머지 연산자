@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // 파이의 4째 자리에서 반올림한 수를 출력하려고함
+        double pi = 3.141592;
+        // 이런경우 round 를 쓰면 첫째 자리에서 반올림한 수가 나오니깐 파이에 1000을 곱해준후 더블 타입의 1000.0으로 나누어줌
+        double shortPi = Math.round(pi * 1000) / 1000.0;
+
+        System.out.println(pi);                          // 3.141592 출력
+        System.out.println(pi*1000);                     // 3141.592 출력
+        System.out.println(Math.round(pi*1000));         // 3142 출력
+        System.out.println(Math.round(pi*1000)/1000);    // 3 출력
+        System.out.println(Math.round(pi*1000)/1000.0);  // 3.142 출력
+
+        // 3.141을 얻으려면?
+        double pi_2 = pi * 1000;  // 3141.592 출력
+        System.out.println((int)(pi*1000)); // 3141 출력
+        System.out.println((int)(pi*1000)/1000.0); // 3.141 출력
+
+        // 10을 8로 나누어서 나머지 연산자를 얻는 경우
+        int x = 10;
+        int y = 8;
+
+        System.out.printf("%d을 %d로 나누면, %n", x, y);
+        System.out.printf("몫은 %d이고, 나머지는 %d입니다.%n", x / y, x % y);
+    }
+}
